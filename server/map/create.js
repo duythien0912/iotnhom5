@@ -15,7 +15,7 @@ module.exports.create = (event, context, callback) => {
       id: uuid.v1(),
       lat: data.lat,
       lng: data.lng,
-      createdAt: timestamp
+      timestamp: timestamp
     }
   };
 

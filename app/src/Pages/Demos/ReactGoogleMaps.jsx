@@ -19,9 +19,11 @@ class Map extends Component {
   };
 
   componentDidMount = async () => {
-    await axios
+await
+     axios
       .get("https://u3v20krp31.execute-api.us-east-1.amazonaws.com/dev/map")
       .then(data => {
+if(data.data !== this.state.pathCoordinates){
         this.setState({
           pathCoordinates: data.data
         });
@@ -34,11 +36,15 @@ class Map extends Component {
           });
           return true;
         });
+
+}
       })
       .catch(error => {
         console.log(error);
-      });
+      })
+;
   };
+
   render() {
     const { data } = this.state;
     const market = data
@@ -54,8 +60,8 @@ class Map extends Component {
       : {};
     return (
       <GoogleMap
-        defaultZoom={15}
-        defaultCenter={data[0] ? data[0] : { lat: 10.850382, lng: 106.771153 }}
+        defaultZoom={19}
+        defaultCenter={data[0] ? [...data].pop() : { lat: 10.850522, lng: 106.773553 }}
       >
         <Polyline
           path={data}
