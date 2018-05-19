@@ -64,6 +64,7 @@ firebase deploy
 
 ### Deploy web site to another host
 When you run build step it will out put html, css, img, ... in build folder (app/build)
+
 You search:
 ```
 delpoy static web to + [HOST]
