@@ -44,8 +44,9 @@ cd build
 ```bash
 firebase init
 ```
-Edit in .firebaserc from nhom5iottest to your project
-Create file firebase.json
+Edit in .firebaserc from nhom5iottest to your project.
+
+Create file firebase.json.
 ```json
 {
   "hosting": {
