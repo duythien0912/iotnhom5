@@ -2,7 +2,8 @@
 
 ### [DEMO:](https://nhom5iottest.firebaseapp.com)
 
-![alt text](https://image.ibb.co/hjNH5o/screencapture_nhom5iottest_firebaseapp_1526706723223.png "Demo")
+[![Foo](https://image.ibb.co/hjNH5o/screencapture_nhom5iottest_firebaseapp_1526706723223.png)](https://nhom5iottest.firebaseapp.com/)
+
 
 
 ### Edit your API in iot-19-5-2018.ino
