@@ -1,4 +1,4 @@
-# iotnhom5
+# Tracking location by esp8266 and neo6 using Amazon AWS Lambda ( DynamoDB and API gateway)
 
 ### [DEMO:](https://nhom5iottest.firebaseapp.com) https://youtu.be/SstiKUst9BE
 
