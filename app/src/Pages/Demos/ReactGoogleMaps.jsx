@@ -21,7 +21,7 @@ class Map extends Component {
   componentDidMount = async () => {
 await
      axios
-      .get("https://u3v20krp31.execute-api.us-east-1.amazonaws.com/dev/map")
+      .get("YOUR_API_URL")
       .then(data => {
 if(data.data !== this.state.pathCoordinates){
         this.setState({
@@ -80,7 +80,7 @@ if(data.data !== this.state.pathCoordinates){
 const MyMapComponent = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCyfjjFTCSK1Es7PODiNV3recpxSBXNi4g&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAP_API&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `95vh` }} />,
     mapElement: <div style={{ height: `100%` }} />
